@@ -23,20 +23,20 @@ public class Tree {
 
 	public static void main(String[] args) {
 
-		int i = 0, j = 0, k = 0, x = 9;
+		int i = 0, j = 0, k = 0, num = 9;
 		
 		for(i = 0; i <= x; i++) {
-			method(i, j, k, x);
+			print(i, j, k, num);
 		}
 		for (i = x - (x - 2); i >= 0; i--) {
-			method(i, j, k, x);
+			print(i, j, k, num);
 		}
 		
 	}
 	
-	static void method(int i, int j, int k, int x) {
+	static void print(int i, int j, int k, int num) {
 		if(i == 0) {
-			for(j = x - 1; j > i; j--) {
+			for(j = num - 1; j > i; j--) {
 				System.out.print(' ');
 			}
 			for(k = 0; k < 2; k++) {
@@ -44,7 +44,7 @@ public class Tree {
 			}
 			System.out.println();
 		} else {
-			for(j = x - 1; j >= i; j--) {
+			for(j = num - 1; j >= i; j--) {
 				System.out.print(' ');
 			}
 			for(k = 0; k < (i * 2); k++) {
