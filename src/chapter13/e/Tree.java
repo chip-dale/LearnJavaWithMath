@@ -25,10 +25,10 @@ public class Tree {
 
 		int i = 0, j = 0, k = 0, num = 9;
 		
-		for(i = 0; i <= x; i++) {
+		for(i = 0; i <= num; i++) {
 			print(i, j, k, num);
 		}
-		for (i = x - (x - 2); i >= 0; i--) {
+		for (i = num - (num - 2); i >= 0; i--) {
 			print(i, j, k, num);
 		}
 		
